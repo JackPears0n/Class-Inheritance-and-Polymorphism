@@ -7,7 +7,7 @@ public class WizardScript : Enemy
     // Start is called before the first frame update
     void Start()
     {
-        AttackPlayer();
+        base.AttackPlayer();
     }
 
     // Update is called once per frame
@@ -16,9 +16,4 @@ public class WizardScript : Enemy
         
     }
 
-    public override void AttackPlayer()
-    {
-        print("The Wizard is observing the player");
-        base.AttackPlayer();
-    }
 }
